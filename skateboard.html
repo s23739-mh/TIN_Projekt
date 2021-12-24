@@ -6,6 +6,7 @@
     <meta name="description" content="TIN Project Site">
     <meta name="credentials" content="Mikołaj Hołdakowski s23739">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,7 +23,9 @@
         <div class="contentImage">
             <img src="SkateboardBanner-slimC.jpeg" width="100%">
             <div class="firstBannerText">
-                <div class="firstHeader"><h1>Welcome!</h1></div>
+                <div class="firstHeader">
+                    <h1>Welcome!</h1>
+                </div>
                 <div class="firstDescription">Welcome to my website project!
                 </div>
                 </br></br>
@@ -39,28 +42,53 @@
                 being performed during a trick.</p>
         </div>
         <div class="form">
-        <div class="leftForm">
-            <h2>Sign up for getting tips into your e-mail!</h1>
-            <form action="/register.php" method="get">
-            <label for="name">Name:</label></br>
-            <input type="text" id="name" name="name" placeholder="Enter Your Name">
-            </br></br>
-            <label for="email">Email:</label></br>
-            <input type="text" id="email" name="email" placeholder="Enter Your Email">
-        </br></br></br>
-        <input type="submit" value="Sign in">
-            </form>
-            <p>We are not responsible for any data leaks, accidental spam or any other harm that may cause passing your email for us.</p>
+            <div class="left">
+            <div class="leftForm">
+                <h2>Sign up for getting tips into your e-mail!</h1>
+                    <form action="/register.php" method="get">
+                        <label for="name">Name:</label></br>
+                        <i class="fa fa-user"></i></i> <input type="text" id="name" name="name"
+                            placeholder="Enter Your Name">
+                        </br></br>
+                        </i><label for="email">Email:</label></br>
+                        <i class="fa fa-envelope"></i> <input type="text" id="email" name="email"
+                            placeholder="Enter Your Email">
+                        </br></br></br>
+                        <input type="submit" value="Sign in">
+                    </form>
+                    <p>We are not responsible for any data leaks, accidental spam or any other harm that may cause
+                        passing your email for us.</p>
+                    </div>
+                    <div class="leftImage">
+                        <img src="pexels-photo-1527242.jpeg">
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="rightDescription">
+                <h2>Consistency is Important</h2>
+                <p>Honestly consistency is the <b>most important</b> aspect of acquiring new skill. </br>If your goal is
+                    to
+                    achieve greater things with skateboarding or actually any other skill, then you should focus on
+                    being consistent. </br></br>
+                    There are many known techniques that help develop good habits and consistency in doing things,
+                    so if you need help with developing consistency, contact me and, I will try to help you with it.
+                    </br></br>There is also a very cool youtube channel that you should check out with content about
+                    <b>productivity</b>!
+                </p>
+                </br>
+                <button type="button" onclick="myCredentials()">Get My E-Mail!</button>
+                <button type="button" onclick="ytChannel()">Youtube Channel</button>
+            </div>
+            <div class="rightTrick">
+                <h2>Trick of the Day</h2>
+            </div>
         </div>
-        <div class="rightDescription">
-            <h2>Consistency is Important</h2>
-            <p>Honestly it is the <b>most important</b> aspect of acquiring new skill. If your goal is to
-            achieve greater things with skateboarding or actually any other skill, then you should focus on being consistent. </br></br> In next e-mail that I'll send, I will explain how to work on it. </p>
-            <button type="button">Click fsdfsdfdfsMe!</button>
         </div>
     </div>
-    </div>
-    <div class="footer">    <!--localstorage to display number of visitors-->
+    <div class="footer">
+        <!--localstorage to display number of visitors-->
 
     </div>
 </body>
