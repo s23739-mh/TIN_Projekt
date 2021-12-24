@@ -1,0 +1,68 @@
+
+.body{
+    overflow:hidden;
+    width:100%;
+    background-color:black;
+}
+.header{
+    width:100%;
+    height:15%;
+    position:absolute;
+    background-color:white;
+    float:left;
+    font-family:fantasy;
+    
+}
+#image{
+    margin: 1%;
+    margin-left: 25%;
+    padding:0%; 
+    float:left;   
+}
+
+.header a{
+    padding:2%;
+    color:gray;
+    text-decoration:none;
+    font-size:x-large;
+    float:right;
+    margin-top:2%;
+}
+.header a:hover
+{
+    color:tomato;
+}
+.links{
+    margin-right:30%;
+}
+.content{
+    padding-top:8%;
+    background-color:#333;
+    width:100%;
+    height:100%;
+}
+.contentImage img{
+opacity:0.45;
+}
+.contentImage{
+    position:relative;
+    text-align:center;
+    background-color:tomato;
+}
+.contentImage .firstBanner {
+    position:absolute;  
+    top:35%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color:rgba(255, 99, 71, 0.082);
+    color:white;
+}
+.contentImage .firstHeader{
+    font-weight:700;
+    font-size:7vh;
+    font-family: 'Brush Script MT', cursive;
+}
+.contentImage .firstDescription{
+    font-weight:400;
+    font-size:4vh;
+}
