@@ -11,8 +11,7 @@
 
 <body>
     <div class="header">
-
-        <a id="image" href=skateboard.html><img src="pjatk-logo.png" style="max-width:100px;width:10vh"></a href>
+        <a id="image" href=skateboard.html><img src="pjatk-logo.png" style="max-width:200px;width:20vh"></a href>
         <div class=links>
             <a href="skateboard.html">Home</a>
             <a href="dictionary.html">Dictionary</a> <!-- slide down examples on hover-->
@@ -43,30 +42,31 @@
         </div>
         <div class="form">
             <div class="left">
-            <div class="leftForm">
-                <h2>Sign up for getting tips into your e-mail!</h1>
-                    <form action="/register.php" method="get">
-                        <label for="name">Name:</label></br>
-                        <i class="fa fa-user"></i></i> <input type="text" id="name" name="name"
-                            placeholder="Enter Your Name">
-                        </br></br>
-                        </i><label for="email">Email:</label></br>
-                        <i class="fa fa-envelope"></i> <input type="text" id="email" name="email"
-                            placeholder="Enter Your Email">
-                        </br></br></br>
-                        <input type="submit" value="Sign in">
-                    </form>
-                    <p>We are not responsible for any data leaks, accidental spam or any other harm that may cause
-                        passing your email for us.</p>
-                    </div>
-                    <div class="leftImage">
-                        <img src="pexels-photo-1527242.jpeg">
-                    </div>
+                <div class="leftForm">
+                    <h2>Sign up for getting tips into your e-mail!</h1>
+                        <form action="/register.php" method="get">
+                            <label for="name">Name:</label></br>
+                            <i class="fa fa-user"></i></i> <input type="text" id="name" name="name"
+                                placeholder="Enter Your Name">
+                            </br></br>
+                            </i><label for="email">Email:</label></br>
+                            <i class="fa fa-envelope"></i> <input type="text" id="email" name="email"
+                                placeholder="Enter Your Email">
+                            </br></br></br>
+                            <input type="submit" value="Sign in">
+                        </form>
+                        <p>We are not responsible for any data leaks, accidental spam or any other harm that may cause
+                            passing your email for us.</p>
                 </div>
-
+                <div class="leftImage">
+                    <img src="pexels-photo-1527242.jpeg" style="max-width:37vw;">
+                </div>
             </div>
-            <div class="right">
-                <div class="rightDescription">
+
+        
+        <div class="right">
+            <div class="rightDescription">
+                <article>
                 <h2>Consistency is Important</h2>
                 <p>Honestly consistency is the <b>most important</b> aspect of acquiring new skill. </br>If your goal is
                     to
@@ -78,18 +78,25 @@
                     <b>productivity</b>!
                 </p>
                 </br>
+            </article>
                 <button type="button" onclick="myCredentials()">Get My E-Mail!</button>
                 <button type="button" onclick="ytChannel()">Youtube Channel</button>
             </div>
             <div class="rightTrick">
-                <h2>Trick of the Day</h2>
+                <h1>Trick of the Day</h1>
+                <h2>Ollie!</h2>
+                <a id="trickpng"><img src="ollie.png" style="max-width:20vw;"></a></br>
+                <button type="button" onclick="seeTrick(Ollie)">See Explanation</button>
             </div>
         </div>
-        </div>
     </div>
+</div>
+    </div>
+    <div style="clear:both"></div>
     <div class="footer">
         <!--localstorage to display number of visitors-->
-
+        Author: Mikołaj Hołdakowski</br>
+        E-mail: <a href="mailto:s23739@pjwstk.edu.pl">s23739@pjwstk.edu.pl</a>
     </div>
 </body>
 
