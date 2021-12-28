@@ -7,6 +7,7 @@
     <meta name="credentials" content="Mikołaj Hołdakowski s23739">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 
 <body>
@@ -53,7 +54,7 @@
                             <i class="fa fa-envelope"></i> <input type="text" id="email" name="email"
                                 placeholder="Enter Your Email">
                             </br></br></br>
-                            <input type="submit" value="Sign in">
+                            <input type="submit" value="Sign in" disabled=true;>
                         </form>
                         <p>We are not responsible for any data leaks, accidental spam or any other harm that may cause
                             passing your email for us.</p>
@@ -66,7 +67,7 @@
         
         <div class="right">
             <div class="rightDescription">
-                <article>
+                <article class="artcl">
                 <h2>Consistency is Important</h2>
                 <p>Honestly consistency is the <b>most important</b> aspect of acquiring new skill. </br>If your goal is
                     to
@@ -78,15 +79,17 @@
                     <b>productivity</b>!
                 </p>
                 </br>
+                <p><b id="myEmail" style="display:none;">s23739@pjwstk.edu.pl</b></p>
             </article>
                 <button type="button" onclick="myCredentials()">Get My E-Mail!</button>
-                <button type="button" onclick="ytChannel()">Youtube Channel</button>
+                <button type="button" onclick="window.open('https://www.youtube.com/channel/UCSLeoz5odIGS2GdlbHbCAUg');">Youtube Channel</button>
+        
             </div>
             <div class="rightTrick">
                 <h1>Trick of the Day</h1>
                 <h2>Ollie!</h2>
                 <a id="trickpng"><img src="ollie.png" style="max-width:20vw;"></a></br>
-                <button type="button" onclick="seeTrick(Ollie)">See Explanation</button>
+                <button type="button" onclick="seeTrick('Ollie')">See Explanation</button>
             </div>
         </div>
     </div>

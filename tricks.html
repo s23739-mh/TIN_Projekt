@@ -7,6 +7,7 @@
     <meta name="credentials" content="Mikołaj Hołdakowski s23739">
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -44,19 +45,19 @@
         </div>
         <div class="learnPart">
             <div class="tricksScreen">
-                <img src="tricks/Idle.gif">
+                <img src="tricks/Ollie.gif">
 
             </div>
             <div class="tricksList">
                 <h2>Choose a Trick</h2>
                 <div class="trickButtons">
-                    <button onclick="trick('Ollie')">Ollie</button>
-                    <button onclick="trick('Shuv-It')">Shuv-It</button>
-                    <button onclick="trick('PShuv-It')">Pop Shuv-It</button>
-                    <button onclick="trick('KFlip')">Kickflip</button>
-                    <button onclick="trick('FB 360')">F/B-side 360</button>
+                    <button onclick="seeTrick('Ollie')">Ollie</button>
+                    <button onclick="seeTrick('Shuv-It')">Shuv-It</button>
+                    <button onclick="seeTrick('PShuv-It')">Pop Shuv-It</button>
+                    <button onclick="seeTrick('KickFlip')">Kickflip</button>
+                    <button onclick="seeTrick('360')">F/B-side 360</button>
                 </div>
-                <div class="pargraphOllie" style=display:none;>
+                <div id="Ollie" style=display:none;>
                     <b class="pHeader">In brief:</b>
                 </br>
             <p class="text">
@@ -80,28 +81,91 @@
                 the board
             </p>
                 </div>
-                <p class="pargraphShuv-It" style=display:none;>
-
+                <div id="Shuv-It" style=display:none;>
+                <b class="pHeader">In brief:</b>
+                </br>
+                <p class="text">
+                    1. Place your feet</br>
+                    2. Unweight/Jump</br>
+                    3. Scoop back foot forward</br>
+                    4. Get front foot up</br>
+                    5. In air, pull feet up </br>
+                    6. Catch the board </br>
+                    7. Land it
                 </p>
-                <p class="pargraphPShuv-It" style=display:none;>
-
+                <hr class="dashed">
+            </br>
+            <h2 style="color:tomato">Foot Position</h2>
+            <p>
+                With your front foot lined up with the toe edge at a 30-degree angle.</br>
+                 Line up your foot with the curve of the tail and angled 10-degrees out.
+            </p>
+                </div>
+                <div id="PShuv-It" style=display:none;>
+                    <b class="pHeader">In brief:</b>
+                </br>
+                <p class="text">
+                    1. Place your feet</br>
+                    2. Jump Backward</br>
+                    3. Scoop back foot forward</br>
+                    4. Get front foot up</br>
+                    5. In air, pull feet up </br>
+                    6. Catch the board </br>
+                    7. Land it
                 </p>
-                <p class="pargraphKickflip" style=display:none;>
-
+                <hr class="dashed">
+            </br>
+            <h2 style="color:tomato">Foot Position</h2>
+            <p>
+                With your front foot lined up with the toe edge at a 30-degree angle.</br>
+                Line up your foot with the curve of the tail and angled 10-degrees out.
+            </p>
+                </div>
+                <div id="KickFlip" style=display:none;>
+                    <b class="pHeader">In brief:</b>
+                </br>
+                <p class="text">
+                    1. Make an Ollie with pop</br>
+                    2. Flick your toe towards the nose</br>
+                    3. Hold your front foot over the board</br>
+                    4. Stay in air as much as you need</br>
+                    5. Throw both feet on the board</br>
+                    6. Land it and roll away</br>
                 </p>
-                <p class="pargraph360" style=display:none;>
-
+                <hr class="dashed">
+            </br>
+            <h2 style="color:tomato">Foot Position</h2>
+            <p>
+                Put your front foot with the ball of the foot in at the center line of the board. </br>
+                Angled 45 degrees from perpendicluar.
+            </p>
+                </div>
+                <div id="360" style=display:none;>
+                    <b class="pHeader">In brief:</b>
+                </br>
+                <p class="text">
+                    1. Pop the board</br>
+                    2. Get really high</br>
+                </br> 3. Flick like kickflip
+                </br>4. Land it and roll away
                 </p>
-                <div class="yeah">
-            </div>
+                <hr class="dashed">
+            </br>
+            <h2 style="color:tomato">Foot Position</h2>
+            <p>
+                Put your feet in kickflip position and then move your front foot back to the center of the board. </br>
+                Put your back foot so the toe is hanging off the edge of the tail a little bit.
+            </p>
+                </div>
+
             </div>
             <div class="other">
                 <h1>Other Tricks</h1>
-                <a href='https://www.youtube.com/watch?v=56rAynxox9Q'>Hardflip</a>
-                <a href='https://www.youtube.com/watch?v=2PHo9-SVD00'>Impossible</a>
-                <a href='https://www.youtube.com/watch?v=4eXGai8KLcw'>Varial Flip</a>
-                <a href='https://www.youtube.com/watch?v=CM6mFNnALI0'>Pressure Flip</a>
-                <a href='https://www.youtube.com/watch?v=dJ9puOWVvcU'>Dolphin Flip</a>
+                <a href='https://www.youtube.com/watch?v=56rAynxox9Q' target='_blank'>Hardflip</a>
+                <a href='https://www.youtube.com/watch?v=2PHo9-SVD00' target='_blank'>Impossible</a>
+                <a href='https://www.youtube.com/watch?v=4eXGai8KLcw' target='_blank'>Varial Flip</a>
+                <a href='https://www.youtube.com/watch?v=CM6mFNnALI0' target='_blank'>Pressure Flip</a>
+                <a href='https://www.youtube.com/watch?v=dJ9puOWVvcU' target='_blank'>Dolphin Flip</a>
             </div>
         </div>
 
